@@ -1,0 +1,230 @@
+
+/* BASE CSS (Initital Setup)
+----------------------------------------
+  #BASE CONTENT
+      #TYPOGRAPHY
+        #BODY
+        #HEADINGS
+        #PARAGRAPHS
+        #LINKS
+        #HELPERS
+    #MEDIA
+        #IMAGES
+    #COMPONENTS
+        #BUTTONS
+  #BASE LAYOUT
+        #MEDIAQUERIES
+        #CONTAINER
+        #GRID SYSTEM
+           #CLEARFIX
+  #BASE SITE
+     #SITE STRUCTURE
+        #HEADER
+             #SITE-BRANDING (LOGO)
+        #FOOTER
+        #SECTIONS
+        #SUB PAGES
+    #SITE NAVIGATION
+        #TOGGLE-NAV (Default for Small Screens)
+----------------------------------------- */
+/* TYPOGRAPHY */
+/* Rference
+     62.5% => 10px
+     68.8%  => 11px
+     75%    => 12px
+     81.3%  => 13px
+     87.5%  => 14px
+     100%   => 16px
+     112.5% => 18px
+     125%   => 20px
+  */
+
+body {
+    color:hotpink;
+    font-family:  classico-urw, sans-serif;
+    font-size: 87.5%; /* 1em = 14px */
+    line-height: 1.5em; /* 14px * 1.5em = 21px */
+    background: white;
+}
+li {
+    color: rgb(138, 136, 136);
+}
+
+ a {
+    color: rgb(235, 22, 189);
+}
+ a:hover {
+    color: rgb(194, 189, 189);
+}
+
+.box-a {
+    border: solid 2px rgb(238, 202, 230);
+
+}
+
+ /* #HEADINGS
+        Based upon a Traditional Typographic Scale
+        16, 18, 21, 24, 36, 48
+  */
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: miller-banner, serif;
+  margin: 0.5em 0; 
+}
+
+h1 {
+  font-size: 3em;
+  /* 48px / 16px = 3em */
+  line-height: 1em; 
+  color: rgb(138, 136, 136);
+}
+
+h2 {
+  font-size: 2.25em;
+  /* 36px / 16px = 2.25em */
+  line-height: 1.1em; 
+  color: rgb(138, 136, 136);  
+}
+
+h3 {
+  font-size: 1.5em;
+  /* 24px / 16px = 1.5em */
+  line-height: 1.2em;   
+}
+
+h4 {
+  font-size: 1.3125em;
+  /* 21px / 16px = 1.3125em */
+  line-height: 1.3em;   
+}
+
+ h5 {
+  font-size: 1.125em;
+  /* 18px / 16px = 1.125em */
+  line-height: 1.4em;    
+ }
+
+ h6 {
+  font-size: 1em;
+  /* 16px / 16px = 1em */
+  line-height: 1.5em;   
+ }
+ #subhesd .box-a {
+    box-sizing: 100%;
+} 
+
+ .box-a {
+    text-align: left;
+    padding-left: 50px;
+}
+
+/* SUBHEAD */
+
+
+   #subhead h1 {
+       text-align: center;
+   }
+   #subhead h2 {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: classico-urw, sans-serif;
+}
+#subhead h3 {
+    text-align: center;
+    font-style: italic;
+   
+}
+   
+
+/* MAINCONTENTS */
+
+  #main-contents h2 h3 {
+    text-align: left;
+}
+#main-contents h3 {
+    font-style: italic;
+}
+#main-contents h4 {
+    color: rgb(138, 136, 136);
+}
+
+@media (max-width: 768px){
+    .box-a {
+      padding-left: 0;
+   }
+    #subhead h1 {
+ text-align: center;
+    }
+   } 
+   
+   /* HEADER */
+
+   .site-header {
+       text-align: center;
+       background: gray;
+       color: white;
+   }
+   .site-header span {
+       color: rgb(238, 202, 230);
+   }
+   
+   @media (min-width: 768px){
+       .site-header .container {
+           display: flex;
+           justify-content: space-between;
+       }
+   }
+
+   /* SITE ID */ 
+   .site-id h1 {
+      font-size: 1.5em;
+      color: white;
+      margin: 0;
+      padding-left: 20px; 
+   }
+   .site-id h1 a {
+    display: block;
+    padding: .6em 0; 
+    color: white;
+    text-decoration: none;
+ }
+ .site-id h1 a:hover {
+     color: rgb(199, 196, 196);
+ }
+
+
+   /* SITE NAV */
+   nav {
+       padding-right: 10px;
+   }
+ nav ul {
+       margin: 0;
+       padding: 5px 0 0 0;
+       list-style: none;
+       font-size: 1.2em;
+}
+nav ul li{
+    display: inline-block;
+   
+    
+}
+nav ul li a {
+    display: inline-block;
+    padding: .5em .75em;
+    text-decoration: none;
+    color: white;
+}
+    .site-main {
+background-color: pink;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+  
