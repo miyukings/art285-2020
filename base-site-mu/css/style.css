@@ -240,8 +240,8 @@ header.site-header {
 
 @media (min-width: 768px) {
     header.site-header .container {
-        display: flex;
-        justify-content: space-between;   
+        display: block;
+        /* justify-content: space-between;    */
     }
 }
 
@@ -283,9 +283,9 @@ footer {
 
 /* SITE NAV (Primary Top Nav) */
 .site-nav ul {
-    display: flex; 
+    /* display: flex; 
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
     margin: 0; 
     padding: 0;
 }
@@ -297,11 +297,7 @@ footer {
    padding: .5em 1em;
 }
 
-.site-info-menu li a {
-    list-style: none;
-    font-family: miller-banner, serif;
-    color: white;
-}
+
 
 /* MENU BUTTON */
 .menu-button {
