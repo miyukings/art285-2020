@@ -84,22 +84,15 @@ p {
 }
 
 /* TYPE SPECIMEN */
-h1.headline {
-    font-family: miller-banner, serif;
+h2.section-head {
+   text-align: center;
+}
+h5 {
+  width: 500px;
+  margin: 50px auto;
+  text-align: center;
    
 }
-.headline {
-    font-size: 4em;
-    font-weight: bold;
-   
-}
-.subheadline {
-    font-size: 2em;
-    line-height: 1.2;
-    font-weight: normal;
-    color: rgba(0,0,0,.7);
-}
-
 
 /* LINKS */
 h1 {
@@ -215,6 +208,7 @@ body {
     .push-one-third { margin-left: 34.333%;}
     .two-thirds { width: 64.6666%}
     .one-fourth { width: 23%}
+    .three-fourth { width: 69%}
     .push-one-fourth { margin-left: 26%;}
     .push-one-half { margin-left: 51%;}
     .push-one-third { margin-left: 34.333%;}
@@ -258,7 +252,7 @@ header.site-header {
 }
 .site-header a:hover,
 .site-footer a:hover {
-    color: rgb(146, 215, 223);
+    color: rgb(218, 73, 21);
 }
 
 /* SITE FOOTER */
@@ -272,11 +266,18 @@ header.site-header {
      font-size: 1.5em;
      margin: 0;
      text-align: center;
+     display: inline-block;
+     align-items: center;
     
 }
 .site-id a {
-    display: block;
+    display: inline-block;
     padding: .25em 0;
+}
+
+footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover; 
 }
 
 
@@ -294,6 +295,12 @@ header.site-header {
 .site-nav a {
    display: block;
    padding: .5em 1em;
+}
+
+.site-info-menu li a {
+    list-style: none;
+    font-family: miller-banner, serif;
+    color: white;
 }
 
 /* MENU BUTTON */
@@ -395,9 +402,13 @@ section {
 .hero {
   margin-left: auto;
   margin-right: auto;
-  background-color: aqua;
     /* padding: 6em 1em; */
 }
+.hero {
+    background-image: url(../img/3rings.jpg);
+    background-size: cover;
+}
+
 
 .hero h2 {
     font-size: 4em;
@@ -409,6 +420,15 @@ section {
     margin-right: auto;
     text-align: center;
     padding-left: 5%;
+}
+
+.menu-dropdown li {
+    list-style: none;
+}
+
+#collection {
+    background-image: url(../img/collection-bg-2000x1200.jpg);
+    background-size: cover;
 }
 
 /* ARTICLE */
