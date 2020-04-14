@@ -52,7 +52,7 @@ body {
  h1, h2, h3, h4, h5, h6 {
      margin: .5em 0;
     font-weight: normal;
-    font-family: cora, sans-serif;
+    font-family: eurostile, sans-serif;
 }
 
 h1 {
@@ -99,15 +99,11 @@ h1.headline {
     font-weight: normal;
     color: rgba(0,0,0,.7);
 }
-.date {
-    font-style: italic;
-    color: rgba(0,0,0,.5);
 
-}
 
 /* LINKS */
 h1 {
-    font-family: cora, sans-serif;
+    font-family: eurostile, sans-serif;
 }
 
 a {
@@ -234,42 +230,6 @@ body {
 
 
 
-/* FOR LAYOUT DEMO */
-body.demo::before {
-    background: red;
-    content: "Small Screen ( 0 - 767px)";
-    display: block;
-    color: white;
-    text-align: center;
-    padding: .2em;
-    font-size: .8em;
-}
-
-
-@media (min-width:768px) {
-    /* FOR MID-SIZE SCREEENS/TABLETS */
-    body.demo::before { 
-        background: blue;
-        content: "Mid Screen ( 768 - 999px)";
-    }
-}
-
-@media (min-width:1000px) {
-    /* FOR LARGE-SIZED SCREEENS/LAPTOPS */
-    body.demo::before { 
-        background: green;
-        content: "Large Screen ( 1000 - 1199px)";
-    }
-}
-
-@media (min-width:1200px) {
-    /* FOR EXTRA-LARGE-SIZE SCREEENS/DESCTOP MONITORS */
-    body.demo::before { 
-        background: purple;
-        content: "EX-Large Screen ( 1200px + )";
-    }
-}
-
 /* SITE STURCTURE */
 
 /* SITE HEADER */
@@ -300,6 +260,7 @@ header.site-header {
 .site-footer a:hover {
     color: rgb(146, 215, 223);
 }
+
 /* SITE FOOTER */
 .site-footer {
   padding: 1em .5em 2em .5em; 
@@ -311,9 +272,10 @@ header.site-header {
      font-size: 1.5em;
      margin: 0;
      text-align: center;
+    
 }
 .site-id a {
-    display: inline-block;
+    display: block;
     padding: .25em 0;
 }
 
@@ -362,7 +324,7 @@ header.site-header {
 }
 
 .toggle-nav .site-nav {
-    text-align: center;
+    text-align: left;
 }
 
 /* HIDE NAV ON SMALL SCREEN BY DEFAULT */
@@ -431,9 +393,10 @@ section {
 }
 
 .hero {
-    text-align: center;
-    background: rgba(0,0,0,.1);
-    padding: 6em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: aqua;
+    /* padding: 6em 1em; */
 }
 
 .hero h2 {
@@ -557,28 +520,6 @@ body.demo::before {
         background: green;  
     }
 }
-
-
-/* FOR DEV TESTING ONLY */
- /* * {   
-    background-color: rgb(255, 0, 0, .2);
-    color:rgb(255, 0, 0, .2);
-    box-shadow: 0 0 0 3px inset rgba(255, 0, 0, 1);
-}
-.site-header {
-    background-color: rgba(0, 255, 0, .2);
-    box-shadow: 0 0 0 3px inset rgba(0, 255, 0, 1);
-}
-.site-main {
-    background-color: rgba(34, 0, 255, 0.2);
-    box-shadow: 0 0 0 3px inset rgba(0, 179, 255, 1);
-}
-.site-footer {
-    background-color: rgb(255, 255, 0, 0.4);
-    box-shadow: 0 0 0 3px inset rgba(255, 255, 0, 1);
-  }  */
-
-
 
 
 
