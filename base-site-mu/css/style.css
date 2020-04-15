@@ -122,7 +122,7 @@ img {
 
 /* BUTTON */
 .button,button,input[type="submit"] {
-    font-family: cora, sans-serif;
+    font-family: eurostile, sans-serif;
     font-size: 1em;
     display: inline-block;
     background-color:rgb(88, 70, 64);
@@ -216,9 +216,10 @@ body {
     .row.centered {
         justify-content: center;
     }
-    .column.centered {
+    .column.one-half {
         margin-left: auto;
         margin-right: auto;
+        max-width: 450px;
     }
 }
 
@@ -227,9 +228,16 @@ body {
 /* SITE STURCTURE */
 
 /* SITE HEADER */
-header.site-header {
-    margin: 0 2em;
-    font-family: cora, sans-serif;
+header.site-header  {
+    margin: 0;
+    padding: 50px 0 50px 45px;
+    font-family: eurostile, sans-serif;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 450px;
+    background-color: white;
 }
 
 .site-header {
@@ -256,10 +264,29 @@ header.site-header {
 }
 
 /* SITE FOOTER */
-.site-footer {
+.site-footer nav.site-nav ul {
   padding: 1em .5em 2em .5em; 
-  font-family: cora, sans-serif;
+  font-family: eurostile, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
 } 
+
+.site-footer .site-info-menu ul li {
+    list-style: none;
+    max-width: 200px;
+    border: solid 1px blue;  
+}
+.site-info-menu li {
+    color: white;
+}
+
+
+footer {
+    background-image: url(../img/footer-bg.jpg);
+    background-size: cover; 
+}
+
 
 /* SITE ID (LOGO) */
 .site-id h1 {
@@ -275,14 +302,11 @@ header.site-header {
     padding: .25em 0;
 }
 
-footer {
-    background-image: url(../img/footer-bg.jpg);
-    background-size: cover; 
-}
+
 
 
 /* SITE NAV (Primary Top Nav) */
-.site-nav ul {
+.site.site-nav ul {
     /* display: flex; 
     justify-content: center;
     flex-wrap: wrap; */
@@ -395,23 +419,23 @@ section {
     padding: 4em 0;
 }
 
-.hero {
+#hero {
   margin-left: auto;
   margin-right: auto;
     /* padding: 6em 1em; */
 }
-.hero {
+#hero {
     background-image: url(../img/3rings.jpg);
     background-size: cover;
 }
 
 
-.hero h2 {
+#hero h2 {
     font-size: 4em;
     line-height: 1; 
 }
 
-.hero p {
+#hero p {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -428,7 +452,7 @@ section {
 }
 
 /* ARTICLE */
-.hero p {
+#hero p {
     margin-left: auto;
     margin-right: auto;
 
